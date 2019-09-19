@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinAssessmentPanel"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinAssessmentPanel"/>
+    <name value="Skin Assessment Panel"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinAssessmentPanel created on 04/May/2016 14:52  This is a panel model that contains all of the necessary elements needed for a skin nursing assessment. Equivalent LOINC
+    code is 72284-3  modeler: NDavis version: 1.0 status: draft"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinAssessmentPanel">
+            <path value="Observation"/>
+            <definition value="SkinAssessmentPanel created on 04/May/2016 14:52  This is a panel model that contains all of the necessary elements needed for a skin nursing assessment. Equivalent
+            LOINC code is 72284-3  modeler: NDavis version: 1.0 status: draft"/>
+        </element>
+        <element id="Observation:hspcSkinAssessmentPanel.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcSkinAssessmentPanel.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="72284-3"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Skin assessment panel"/>
+		</element>
+        <element id="Observation:hspcSkinAssessmentPanel.comment">
+            <path value="Observation.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinAssessmentPanel.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinAssessmentPanel.interpretation">
+            <path value="Observation.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+		<element id="Observation:hspcSkinAssessmentPanel.responsibleObserver">
+			<path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+		</element>
+        <element id="Observation:hspcSkinAssessmentPanel.responsibleObserver:performer">
+            <path value="Observation.performer"/>
+			<sliceName value="performer"/>
+            <short value="performer"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinAssessmentPanel.responsibleObserver:organization">
+            <path value="Observation.performer"/>
+			<sliceName value="organization"/>
+            <short value="organization"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+		<element id="Observation:hspcSkinAssessmentPanel.related">
+			<path value="Observation.related"/>
+			<sliceName value="RelatedObservations"/>
+            <slicing id="10">
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.reference.resolve"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinColorEval">
+			<path value="Observation.related"/>
+			<sliceName value="skinColorEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinColor.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinColorEval.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinColorEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinDegreeOfMoistureEval">
+			<path value="Observation.related"/>
+			<sliceName value="skinDegreeOfMoistureEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinDegreeOfMoistureEval.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinDegreeOfMoistureEval">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinTemperatureEval">
+			<path value="Observation.related"/>
+			<sliceName value="skinTemperatureEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinTemperatureEval.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinTemperatureEval">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinTurgorEval">
+			<path value="Observation.related"/>
+			<sliceName value="skinTurgorEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinTurgorEval.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinTurgorEval">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinIntegrityEval">
+			<path value="Observation.related"/>
+			<sliceName value="skinIntegrityEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:skinIntegrityEval.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinIntegrityEval">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:mucousMembraneIntegrityEval">
+			<path value="Observation.related"/>
+			<sliceName value="mucousMembraneIntegrityEval"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:mucousMembraneIntegrityEval.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:mucousMembraneIntegrityEval">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:pressurePointsExamined">
+			<path value="Observation.related"/>
+			<sliceName value="pressurePointsExamined"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related:pressurePointsExamined.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.related.target:pressurePointsExamined">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

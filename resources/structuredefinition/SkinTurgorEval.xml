@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinTurgorEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
+    <name value="Skin Turgor Eval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinTurgorEval model is an evaluation model. An evaluation model holds a &quot;question&quot; in the key and holds a coded value (CD) answer in data. For example, in the
+    HairColorEval model, the &quot;question&quot; is &quot;What is the hair color evaluation?&quot;, and the &quot;answer&quot; in data can be &quot;White&quot;. In the SkinTurgorEval model, the
+    question is &quot;what is the subject's Skin Turgor?&quot; and the coded answers can be 'Tenting', 'Poor turgor', and 'Normal turgor'. &quot;SkinTurgorEval&quot; by definition means the patient's
+    skin's ability to return to normal position after being pinched and pulled up."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinTurgorEval">
+            <path value="Observation"/>
+            <definition value="SkinTurgorEval model is an evaluation model. An evaluation model holds a &quot;question&quot; in the key and holds a coded value (CD) answer in data. For example,
+            in the HairColorEval model, the &quot;question&quot; is &quot;What is the hair color evaluation?&quot;, and the &quot;answer&quot; in data can be &quot;White&quot;. In the SkinTurgorEval
+            model, the question is &quot;what is the subject's Skin Turgor?&quot; and the coded answers can be 'Tenting', 'Poor turgor', and 'Normal turgor'. &quot;SkinTurgorEval&quot; by definition
+            means the patient's skin's ability to return to normal position after being pinched and pulled up."/>
+        </element>
+        <element id="Observation:hspcSkinTurgorEval.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcSkinTurgorEval.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcSkinTurgorEval.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcSkinTurgorEval.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="39109-4"/>
+		</element>
+		<element id="Observation:hspcSkinTurgorEval.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Turgor [Interpretation} of Skin"/>
+		</element>
+        <element id="Observation:hspcSkinTurgorEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcSkinTurgorEval.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTurgorVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinTurgorEval.comment">
+            <path value="Observation.comment"/>
+            <short value="Observation:hspcSkinTurgorEval.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTurgorEval.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="Observation:hspcSkinTurgorEval.externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTurgorEval.aggregate">
+            <path value="Observation.text"/>
+            <short value="Observation:hspcSkinTurgorEval.aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTurgorEval.bodyLocation">
+            <path value="Observation.bodySite"/>
+            <short value="Observation:hspcSkinTurgorEval.bodyLocation"/>
+            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/turgorBodyLocationVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

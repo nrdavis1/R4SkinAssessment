@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="PressurePointsExamined"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>
+    <name value="Pressure Points Examined"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="PressurePointsExamined is a clinical element model that describes specific locations on the body where pressure ulcers may occur"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcPressurePointsExamined">
+            <path value="Observation"/>
+            <definition value="PressurePointsExamined is a clinical element model that describes specific locations on the body where pressure ulcers may occur"/>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcPressurePointsExamined.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcPressurePointsExamined.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcPressurePointsExamined.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="80345-2"/>
+		</element>
+		<element id="Observation:hspcPressurePointsExamined.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Pressure points examined"/>
+		</element>
+        <element id="Observation:hspcPressurePointsExamined.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcPressurePointsExamined.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/pressurePointsVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.comment">
+            <path value="Observation.comment"/>
+            <short value="Observation:hspcPressurePointsExamined.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="Observation:hspcPressurePointsExamined.externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.aggregate">
+            <path value="Observation.text"/>
+            <short value="Observation:hspcPressurePointsExamined.aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

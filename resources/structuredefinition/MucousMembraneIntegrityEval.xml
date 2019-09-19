@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="MucousMembraneIntegrityEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
+    <name value="Mucous Membrane Integrity Eval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="MucousMembraneIntegrityEval created on 09/Jun/2016 07:45 MucousMembraneIntegrityEval is an evaluation type that holds a &quot;question&quot; in the key and holds a coded
+    value (CD or CO) answer in data. For MucousMembraneIntegrityEval the question is &quot;Is the mucous membrane integrity intact?&quot; (LOINC code 80347-8). The answers are &quot;Intact&quot;
+    and &quot;Not intact&quot; (LOINC answers LA18951-6 and LA25376-7).  modeler: N Davis status: draft version: 1.0"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcMucousMembraneIntegrityEval">
+            <path value="Observation"/>
+            <definition value="MucousMembraneIntegrityEval created on 09/Jun/2016 07:45 MucousMembraneIntegrityEval is an evaluation type that holds a &quot;question&quot; in the key and holds
+            a coded value (CD or CO) answer in data. For MucousMembraneIntegrityEval the question is &quot;Is the mucous membrane integrity intact?&quot; (LOINC code 80347-8). The answers are
+            &quot;Intact&quot; and &quot;Not intact&quot; (LOINC answers LA18951-6 and LA25376-7).  modeler: N Davis status: draft version: 1.0"/>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcMucousMembraneIntegrityEval.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcMucousMembraneIntegrityEval.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcMucousMembraneIntegrityEval.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="80347-8"/>
+		</element>
+		<element id="Observation:hspcMucousMembraneIntegrityEval.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Mucous membrane integrity of Mucous membrane"/>
+		</element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcMucousMembraneIntegrityEval.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/intactnessVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.comment">
+            <path value="Observation.comment"/>
+            <short value="Observation:hspcMucousMembraneIntegrityEval.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="Observation:hspcMucousMembraneIntegrityEval.externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.aggregate">
+            <path value="Observation.text"/>
+            <short value="Observation:hspcMucousMembraneIntegrityEval.aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

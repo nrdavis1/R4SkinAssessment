@@ -1,0 +1,16 @@
+/.project
+/.java-version
+/output/
+/qa/
+/temp/
+/txCache/
+*.swp
+*.zip
+*.jar
+/resources/implementationguide/ig-expansion-parameters.json
+/resources/implementationguide/ig-new.json
+/resources/implementationguide/ig-new.xml
+/resources/implementationguide/ig-validation-parameters.json
+ig.ini
+.DS_Store
+.DS_Store

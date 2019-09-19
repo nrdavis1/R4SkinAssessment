@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hspc" />
+  <url value="http://hl7.org/fhir/hspc/ImplementationGuide/hspc"/>
+  <version value="1.0"/>
+  <name value="R4 Skin Assessment and Wound Assertion Implementation Guide" />
+  <status value="draft" />
+  <date value="2019-06-19"/>
+  <publisher value="Health Services Platform Consortium"/>
+  <contact>
+	<telecom>
+		<system value="email"/>
+		<value value="HSPC@HSPConsortium.org"/>
+	</telecom>
+  </contact>
+  <description value="The Implementation Guide resource profile for HSPC"/>
+    <definition>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/AssociatedPreconditionExt"/>
+			</reference>
+			<description value ="Associated Precondition"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/DeviceExt"/>
+			</reference>
+			<description value ="Device"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/EstimatedIndExt"/>
+			</reference>
+			<description value ="Estimated Indicator"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodySideExt"/>
+			</reference>
+			<description value ="Body Side"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/UnderlyingAnatomicalStructureExt"/>
+			</reference>
+			<description value ="Underlying Anatomical Structure"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodyLocationOrientationExt"/>
+			</reference>
+			<description value ="Body Location Orientation"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodyLocationQualifierExt"/>
+			</reference>
+			<description value ="Body Location Qualifier"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodyLandmarkDescriptionExt"/>
+			</reference>
+			<description value ="Body Landmark Description"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/DistanceFromLandmarkExt"/>
+			</reference>
+			<description value ="Distance From Landmark"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/ClockFacePositionExt"/>
+			</reference>
+			<description value ="Clock Face Position"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/SurfaceOrientationExt"/>
+			</reference>
+			<description value ="Surface Orientation"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodyLandmarkOrientationExt"/>
+			</reference>
+			<description value ="Body Landmark Orientation"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/AnatomicLocationExt"/>
+			</reference>
+			<description value ="Anatomic Location Extension"/>			
+		</resource>
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="Extension/BodyLocationExt"/>
+			</reference>
+			<description value ="Body Location Extension"/>			
+		</resource>
+		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/MucousMembraneIntegrityEval"/>
+			</reference>
+			<description value ="Mucous Membrane Integrity Eval"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/organization"/>
+			</reference>
+			<description value ="HSPC Organization"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/practitioner"/>
+			</reference>
+			<description value ="HSPC Practitioner"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/PressurePointsExamined"/>
+			</reference>
+			<description value ="Pressure Points Examined"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinAssessmentPanel"/>
+			</reference>
+			<description value ="Skin Assessment Panel"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinColorEval"/>
+			</reference>
+			<description value ="Skin Color Eval"/>	
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinDegreeOfMoistureEval"/>
+			</reference>
+			<description value ="Skin Degree Of Moisture Eval"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinIntegrityEval"/>
+			</reference>
+			<description value ="Skin Integrity Eval"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinTemperatureEval"/>
+			</reference>
+			<description value ="Skin Temperature Eval"/>			
+		</resource>		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="StructureDefinition/SkinTurgorEval"/>
+			</reference>
+			<description value ="Skin Turgor Eval"/>			
+		</resource>	
+		
+		
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="ValueSet/intactnessVS"/>
+			</reference>
+			<description value ="Intactness value set"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="ValueSet/organizationtypeVS"/>
+			</reference>
+			<description value ="Organization Type value set"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="ValueSet/pressurePointsVS"/>
+			</reference>
+			<description value ="Pressure Points value set"/>			
+		</resource>	
+		<resource>		
+			<exampleBoolean value="false"/>	
+			<reference>	
+				<reference value ="ValueSet/skinBodyLocationPrecoordVS"/>
+			</reference>
+			<description value ="Skin Body Location Precoordinated value set"/>			
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinColorAssociatedPreconditionVS"/>
+			</reference>
+			<description value="Skin Color Associated Precondition value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinColorVS"/>
+			</reference>
+			<description value="Skin Color value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinDegreeOfMoistureVS"/>
+			</reference>
+			<description value="Skin Degree Of Moisture value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinIntegrityVS"/>
+			</reference>
+			<description value="Skin Integrity value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinTempBodyLocationVS"/>
+			</reference>
+			<description value="Skin Temperature Body Location value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinTemperatureAssociatedPreconditionVS"/>
+			</reference>
+			<description value="Skin Temperature Associated Precondition value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinTemperatureVS"/>
+			</reference>
+			<description value="Skin Temperature value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/turgorBodyLocationVS"/>
+			</reference>
+			<description value="Turgor Body Location value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinTurgorVS"/>
+			</reference>
+			<description value="Skin Turgor value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/clockFacePositionVS"/>
+			</reference>
+			<description value="Clock Face Position value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/presentAbsentVS"/>
+			</reference>
+			<description value="Present/Absent value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/bodyLocationQualifierVS"/>
+			</reference>
+			<description value="Body Location Qualifier value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/bodySideVS"/>
+			</reference>
+			<description value="Body Side value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/bodyLocationOrientationVS"/>
+			</reference>
+			<description value="Body Location Orientation value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/skinBodyTempLocationPrecoordVS"/>
+			</reference>
+			<description value="Skin Body Temperature Location Precoordinated value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/yesNoVS"/>
+			</reference>
+			<description value="Wound Yes/No value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/bodyLandmarkDescriptionVS"/>
+			</reference>
+			<description value="Body Landmark Description value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/surfaceOrientationVS"/>
+			</reference>
+			<description value="Surface Orientation value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/underlyingAnatomicalStructureVS"/>
+			</reference>
+			<description value="Underlying Anatomical Structure value set"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/recurrenceVS"/>
+			</reference>
+			<description value="Recurrence value set"/>
+		</resource>
+    </definition>
+</ImplementationGuide>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinTemperatureEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
+    <name value="Skin Temperature Eval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinTemperatureEval model is an evaluation model. An evaluation model holds a &quot;question&quot; in the key and holds a coded value (CD) answer in data. For example,
+    in the HairColorEval model, the &quot;question&quot; is &quot;What is the hair color evaluation?&quot;, and the &quot;answer&quot; in data can be &quot;White&quot;. In the SkinTemperatureEval
+    model, the question is &quot;what is the subject's Skin Temperature?&quot; and the coded answers can be 'Cool', 'Hot', and 'Warm'. &quot;SkinTemperatureEval&quot; by definition means the temperature
+    of a patient's skin."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinTemperatureEval">
+            <path value="Observation"/>
+            <definition value="SkinTemperatureEval model is an evaluation model. An evaluation model holds a &quot;question&quot; in the key and holds a coded value (CD) answer in data. For example,
+            in the HairColorEval model, the &quot;question&quot; is &quot;What is the hair color evaluation?&quot;, and the &quot;answer&quot; in data can be &quot;White&quot;. In the SkinTemperatureEval
+            model, the question is &quot;what is the subject's Skin Temperature?&quot; and the coded answers can be 'Cool', 'Hot', and 'Warm'. &quot;SkinTemperatureEval&quot; by definition means
+            the temperature of a patient's skin."/>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcSkinTemperatureEval.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcSkinTemperatureEval.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcSkinTemperatureEval.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="39106-0"/>
+		</element>
+		<element id="Observation:hspcSkinTemperatureEval.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Temperature of Skin"/>
+		</element>
+        <element id="Observation:hspcSkinTemperatureEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcSkinTemperatureEval.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTemperatureVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.comment">
+            <path value="Observation.comment"/>
+            <short value="Observation:hspcSkinTemperatureEval.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="Observation:hspcSkinTemperatureEval.externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.aggregate">
+            <path value="Observation.text"/>
+            <short value="Observation:hspcSkinTemperatureEval.aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.bodyLocation">
+            <path value="Observation.bodySite"/>
+            <short value="Observation:hspcSkinTemperatureEval.bodyLocation"/>
+            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTempBodyLocationVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval:associatedPrecondition">
+            <path value="Observation.extension"/>
+            <sliceName value="associatedPrecondition"/>
+            <short value="Associated Precondition"/>
+            <comment value="Key code for this model: AssociatedPrecondition_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTemperatureAssociatedPreconditionVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

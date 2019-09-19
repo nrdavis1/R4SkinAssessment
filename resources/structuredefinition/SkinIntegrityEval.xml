@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinIntegrityEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
+    <name value="Skin Integrity Eval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinIntegrityEval created on 09/Jun/2016 07:44 SkinIntegrityEval is an evaluation type that holds a &quot;question&quot; in the key and holds a coded value (CD or CO) answer
+    in data. For SkinIntegrityEval the question is &quot;Is the integrity of the skin intact?&quot; (LOINC code 80344-5). The answers are &quot;Intact&quot; and &quot;Not intact&quot; (LOINC
+    answers LA18951-6 and LA25376-7).  modeler: N Davis status: draft version: 1.0"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinIntegrityEval">
+            <path value="Observation"/>
+            <definition value="SkinIntegrityEval created on 09/Jun/2016 07:44 SkinIntegrityEval is an evaluation type that holds a &quot;question&quot; in the key and holds a coded value (CD or
+            CO) answer in data. For SkinIntegrityEval the question is &quot;Is the integrity of the skin intact?&quot; (LOINC code 80344-5). The answers are &quot;Intact&quot; and &quot;Not intact&quot;
+            (LOINC answers LA18951-6 and LA25376-7).  modeler: N Davis status: draft version: 1.0"/>
+        </element>
+        <element id="Observation:hspcSkinIntegrityEval.key">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcSkinIntegrityEval.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcSkinIntegrityEval.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcSkinIntegrityEval.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="80344-5"/>
+		</element>
+		<element id="Observation:hspcSkinIntegrityEval.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Skin integrity"/>
+		</element>
+        <element id="Observation:hspcSkinIntegrityEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcSkinIntegrityEval.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinIntegrityVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinIntegrityEval.comment">
+            <path value="Observation.comment"/>
+            <short value="Observation:hspcSkinIntegrityEval.comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinIntegrityEval.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="Observation:hspcSkinIntegrityEval.externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinIntegrityEval.aggregate">
+            <path value="Observation.text"/>
+            <short value="Observation:hspcSkinIntegrityEval.aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSkinIntegrityEval.bodyLocation">
+            <path value="Observation.bodySite"/>
+            <short value="Observation:hspcSkinIntegrityEval.bodyLocation"/>
+            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinBodyLocationPrecoordVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
