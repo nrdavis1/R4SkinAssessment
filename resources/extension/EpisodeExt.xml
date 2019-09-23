@@ -3,7 +3,7 @@
   <id value="EpisodeExt"/>
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/EpisodeExt"/>
   <version value="2.0.0"/>
-  <name value="Episode extension"/>
+  <name value="Episode"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
@@ -11,9 +11,10 @@
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <mapping>
 	<uri value="http://loinc.org/89252-1"/>
 	<identity value="LOINC"/>
@@ -25,7 +26,6 @@
   <differential>
     <element id="Extension:EpisodeExt">
       <path value="Extension"/>
-      <sliceName value="EpisodeExt"/>
       <definition value="Episode describes the occurance of an issue or problem. Is it new, old, first, ongoing, etc."/>
       <min value="0"/>
       <max value="1"/>

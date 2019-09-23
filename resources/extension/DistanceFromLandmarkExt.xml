@@ -3,7 +3,7 @@
   <id value="DistanceFromLandmarkExt"/>
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkExt"/>
   <version value="2.0.0"/>
-  <name value="Distance From Landmark"/>
+  <name value="DistanceFromLandmark"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="CIMI"/>
@@ -11,17 +11,15 @@
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
-  <context value="BodySite"/>
-  <type value="Extension"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension:DistanceFromLandmarkExt">
       <path value="Extension"/>
-      <sliceName value="DistanceFromLandmarkExt"/>
       <definition value="The distance in cm a certain observation is made from a body landmark."/>
       <min value="0"/>
       <max value="1"/>

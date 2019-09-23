@@ -62,7 +62,6 @@
 	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
 	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
 	"ValueSet/intactnessVS":{"base":"ValueSet-intactnessVS.html"},
-	"ValueSet/organizationtypeVS":{"base":"ValueSet-organizationtypeVS.html"},
 	"ValueSet/pressurePointsVS":{"base":"ValueSet-pressurePointsVS.html"},
 	"ValueSet/skinBodyLocationPrecoordVS":{"base":"ValueSet-skinBodyLocationPrecoordVS.html"},
 	"ValueSet/skinColorAssociatedPreconditionVS":{"base":"ValueSet-skinColorAssociatedPreconditionVS.html"},

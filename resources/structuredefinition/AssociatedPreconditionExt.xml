@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="EstimatedIndExt"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/EstimatedIndExt"/>
+  <id value="AssociatedPreconditionExt"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt"/>
   <version value="2.0.0"/>
-  <name value="Estimated Indicator"/>
+  <name value="AssociatedPrecondition"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
-  <description value="An indication that a measurement was estimated.  Answered as yes or no."/>
+  <description value="The set of codes that describe conditions or events that effect an observation."/>
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element id="Extension:estimatedInd">
+    <element id="Extension:associatedPrecondition">
       <path value="Extension"/>
-      <sliceName value="estimatedInd"/>
-      <definition value="An indication that a measurement was estimated.  Answered as yes or no."/>
+      <definition value="The set of codes that describe conditions or events that effect an observation."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
     </element>
-    <element id="Extension:estimatedInd.url">
+    <element id="Extension:associatedPrecondition.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/EstimatedIndExt"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt"/>
     </element>
-    <element id="Extension:estimatedInd.valueCodeableConcept">
+    <element id="Extension:associatedPrecondition.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
       <type>
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
-        <binding>
-            <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/hspc/ValueSet/yesNoVS"/>
-        </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -3,7 +3,7 @@
   <id value="hspc" />
   <url value="http://hl7.org/fhir/hspc/ImplementationGuide/hspc"/>
   <version value="1.0"/>
-  <name value="R4 Skin Assessment and Wound Assertion Implementation Guide" />
+  <name value="R4 Skin Assessment Implementation Guide" />
   <status value="draft" />
   <date value="2019-06-19"/>
   <publisher value="Health Services Platform Consortium"/>
@@ -29,7 +29,7 @@
 			</reference>
 			<description value ="Estimated Indicator"/>			
 		</resource>
-		<resource>		
+		<!-- <resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
 				<reference value ="Extension/BodySideExt"/>
@@ -91,21 +91,21 @@
 				<reference value ="Extension/BodyLandmarkOrientationExt"/>
 			</reference>
 			<description value ="Body Landmark Orientation"/>			
-		</resource>
+		</resource> --><!-- 
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
 				<reference value ="Extension/AnatomicLocationExt"/>
 			</reference>
 			<description value ="Anatomic Location Extension"/>			
-		</resource>
-		<resource>		
+		</resource> -->
+		<!-- <resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
 				<reference value ="Extension/BodyLocationExt"/>
 			</reference>
 			<description value ="Body Location Extension"/>			
-		</resource>
+		</resource> -->
 		
 		<resource>		
 			<exampleBoolean value="false"/>	
@@ -185,13 +185,6 @@
 				<reference value ="ValueSet/intactnessVS"/>
 			</reference>
 			<description value ="Intactness value set"/>			
-		</resource>	
-		<resource>		
-			<exampleBoolean value="false"/>	
-			<reference>	
-				<reference value ="ValueSet/organizationtypeVS"/>
-			</reference>
-			<description value ="Organization Type value set"/>			
 		</resource>	
 		<resource>		
 			<exampleBoolean value="false"/>	

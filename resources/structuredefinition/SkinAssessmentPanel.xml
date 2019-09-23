@@ -3,7 +3,8 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="SkinAssessmentPanel"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinAssessmentPanel"/>
-    <name value="Skin Assessment Panel"/>
+	<version value="1.0.0"/>
+    <name value="SkinAssessmentPanel"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
     <publisher value="Healthcare Services Platform Consortium"/>
@@ -85,7 +86,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
             </type>
         </element>
         <element id="Observation:hspcSkinAssessmentPanel.responsibleObserver:organization">
@@ -96,7 +97,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             </type>
         </element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember">
@@ -115,7 +116,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinColorEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Skin Color Eval"/>
+			<sliceName value="SkinColorEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinColorEval"/>
@@ -123,7 +124,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinDegreeOfMoistureEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Skin Degree of Moisture Eval"/>
+			<sliceName value="SkinDegreeofMoistureEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
@@ -131,7 +132,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTemperatureEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Skin Temperature Eval"/>
+			<sliceName value="SkinTemperatureEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
@@ -139,7 +140,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTurgorEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Skin Turgor Eval"/>
+			<sliceName value="SkinTurgorEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
@@ -147,7 +148,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinIntegrityEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Skin Integrity Eval"/>
+			<sliceName value="SkinIntegrityEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
@@ -155,7 +156,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:mucousMembraneIntegrityEval">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Mucous Membrane Itegrity Eval"/>
+			<sliceName value="MucousMembraneItegrityEval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
@@ -163,7 +164,7 @@
 		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember:pressurePointsExamined">
 			<path value="Observation.hasMember"/>
-			<sliceName value="Pressure Points Examined"/>
+			<sliceName value="PressurePointsExamined"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>

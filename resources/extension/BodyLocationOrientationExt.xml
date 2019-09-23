@@ -3,7 +3,7 @@
   <id value="BodyLocationOrientationExt"/>
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationOrientationExt"/>
   <version value="2.0.0"/>
-  <name value="Body Location Orientation"/>
+  <name value="BodyLocationOrientation"/>
   <title value="Body Location Orientation Extension"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
@@ -12,17 +12,16 @@
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
-  <context value="BodySite"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension:BodyLocationOrientationExt">
       <path value="Extension"/>
-      <sliceName value="BodyLocationOrientationExt"/>
       <definition value="A description of how a body location is oriented."/>
       <min value="0"/>
       <max value="1"/>

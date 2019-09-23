@@ -3,7 +3,7 @@
   <id value="BodyLandmarkOrientationExt"/>
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkOrientationExt"/>
   <version value="2.0.0"/>
-  <name value="Body Landmark Orientation"/>
+  <name value="BodyLandmarkOrientation"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="CIMI"/>
@@ -11,17 +11,16 @@
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
-  <context value="BodySite"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension:BodyLandmarkOrientationExt">
       <path value="Extension"/>
-      <sliceName value="BodyLandmarkOrientationExt"/>
       <definition value="Body locations in relation to a specific body landmark (tatoo, scar, other body structure)."/>
       <min value="0"/>
       <max value="1"/>

@@ -3,7 +3,7 @@
   <id value="BodyLandmarkDescriptionExt"/>
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkDescriptionExt"/>
   <version value="2.0.0"/>
-  <name value="Body Location Orientation"/>
+  <name value="BodyLocationOrientation"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="CIMI"/>
@@ -11,17 +11,16 @@
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  
-  <context value="Observation"/>
-  <context value="Condition"/>
-  <context value="BodySite"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension:BodyLandmarkDescriptionExt">
       <path value="Extension"/>
-      <sliceName value="BodyLandmarkDescriptionExt"/>
       <definition value="A description of a landmark on the body used as a reference to locate something else."/>
       <min value="0"/>
       <max value="1"/>
