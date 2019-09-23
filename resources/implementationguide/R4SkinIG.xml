@@ -3,7 +3,7 @@
   <id value="hspc" />
   <url value="http://hl7.org/fhir/hspc/ImplementationGuide/hspc"/>
   <version value="1.0"/>
-  <name value="R4 Skin Assessment Implementation Guide" />
+  <name value="R4SkinAssessmentImplementationGuide" />
   <status value="draft" />
   <date value="2019-06-19"/>
   <publisher value="Health Services Platform Consortium"/>
@@ -18,14 +18,14 @@
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
-				<reference value ="Extension/AssociatedPreconditionExt"/>
+				<reference value ="StructureDefinition/AssociatedPreconditionExt"/>
 			</reference>
 			<description value ="Associated Precondition"/>			
 		</resource>
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
-				<reference value ="Extension/EstimatedIndExt"/>
+				<reference value ="StructureDefinition/EstimatedIndExt"/>
 			</reference>
 			<description value ="Estimated Indicator"/>			
 		</resource>
@@ -113,21 +113,7 @@
 				<reference value ="StructureDefinition/MucousMembraneIntegrityEval"/>
 			</reference>
 			<description value ="Mucous Membrane Integrity Eval"/>			
-		</resource>		
-		<!-- <resource>		
-			<exampleBoolean value="false"/>	
-			<reference>	
-				<reference value ="StructureDefinition/organization"/>
-			</reference>
-			<description value ="HSPC Organization"/>			
-		</resource>		
-		<resource>		
-			<exampleBoolean value="false"/>	
-			<reference>	
-				<reference value ="StructureDefinition/practitioner"/>
-			</reference>
-			<description value ="HSPC Practitioner"/>			
-		</resource>	 -->	
+		</resource>	
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	

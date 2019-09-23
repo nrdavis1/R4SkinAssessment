@@ -3,7 +3,7 @@
   <id value="yesNoVS"/>
   <url value="http://hl7.org/fhir/hspc/ValueSet/yesNoVS"/>
   <version value="0.01"/>
-  <name value="Yes/No Value Set"/>
+  <name value="YesNoValueSet"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Health Services Platform Consortium (HSPC)"/>

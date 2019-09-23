@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/pressurePointsVS"/>
     <version value="0.01"/>
-    <name value="Pressure Points value set"/>
+    <name value="PressurePointsvalueset"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

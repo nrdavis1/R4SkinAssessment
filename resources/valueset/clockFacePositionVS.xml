@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/clockFacePositionVS"/>
     <version value="0.01"/>
-    <name value="Clock Face Position Value Set"/>
+    <name value="ClockFacePositionValueSet"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

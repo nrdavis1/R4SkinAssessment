@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/skinColorAssociatedPreconditionVS"/>
     <version value="0.01"/>
-    <name value="Skin Color Associated Precondition value set"/>
+    <name value="SkinColorAssociatedPreconditionvalueset"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

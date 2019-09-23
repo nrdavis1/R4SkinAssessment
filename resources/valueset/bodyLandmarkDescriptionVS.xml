@@ -3,7 +3,7 @@
   <id value="bodyLandmarkDescriptionVS"/>
   <url value="http://hl7.org/fhir/hspc/ValueSet/bodyLandmarkDescriptionVS"/>
   <version value="0.01"/>
-  <name value="Body Landmark Description value set"/>
+  <name value="BodyLandmarkDescriptionvalueset"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Health Services Platform Consortium (HSPC)"/>

@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/intactnessVS"/>
     <version value="0.01"/>
-    <name value="Intactness value set"/>
+    <name value="Intactnessvalueset"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

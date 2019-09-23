@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/presentAbsentVS"/>
     <version value="0.01"/>
-    <name value="Present/Absent Value Set"/>
+    <name value="PresentAbsentValueSet"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

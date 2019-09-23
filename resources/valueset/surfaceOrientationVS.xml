@@ -3,7 +3,7 @@
   <id value="surfaceOrientationVS"/>
   <url value="http://hl7.org/fhir/hspc/ValueSet/surfaceOrientationVS"/>
   <version value="0.01"/>
-  <name value="Surface Orientation value set"/>
+  <name value="SurfaceOrientationvalueset"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Health Services Platform Consortium (HSPC)"/>

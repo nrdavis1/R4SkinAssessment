@@ -45,8 +45,6 @@
 	"StructureDefinition/PeriodicityExt":{"base":"StructureDefinition-PeriodicityExt.html"},
 	"StructureDefinition/AnatomicLocationExt":{"base":"StructureDefinition-AnatomicLocationExt.html"},
 	"StructureDefinition/BodyLocationExt":{"base":"StructureDefinition-BodyLocationExt.html"},
-	"StructureDefinition/EpisodeExt":{"base":"StructureDefinition-EpisodeExt.html"},
-	"StructureDefinition/TrendExt":{"base":"StructureDefinition-TrendExt.html"},
 	
 	"StructureDefinition/MucousMembraneIntegrityEval":{"base":"StructureDefinition-MucousMembraneIntegrityEval.html"},
 	"StructureDefinition/PressurePointsExamined":{"base":"StructureDefinition-PressurePointsExamined.html"},
@@ -59,7 +57,6 @@
 	"StructureDefinition/practitioner":{"base":"StructureDefinition-practitioner.html"},
 	"StructureDefinition/SkinTurgorEval":{"base":"StructureDefinition-SkinTurgorEval.html"},
 	
-	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
 	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
 	"ValueSet/intactnessVS":{"base":"ValueSet-intactnessVS.html"},
 	"ValueSet/pressurePointsVS":{"base":"ValueSet-pressurePointsVS.html"},
@@ -73,7 +70,6 @@
 	"ValueSet/skinTemperatureVS":{"base":"ValueSet-skinTemperatureVS.html"},
 	"ValueSet/skinTurgorVS":{"base":"ValueSet-skinTurgorVS.html"},
 	"ValueSet/turgorBodyLocationVS":{"base":"ValueSet-turgorBodyLocationVS.html"},
-	"ValueSet/communicationModeVS":{"base":"ValueSet-communicationModeVS.html"},
 	"ValueSet/clockFacePositionVS":{"base":"ValueSet-clockFacePositionVS.html"},
 	"ValueSet/presentAbsentVS":{"base":"ValueSet-presentAbsentVS.html"},
 	"ValueSet/bodyLocationQualifierVS":{"base":"ValueSet-bodyLocationQualifierVS.html"},

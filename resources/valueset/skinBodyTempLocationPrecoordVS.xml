@@ -4,7 +4,7 @@
 
   <url value="http://hl7.org/fhir/hspc/ValueSet/skinBodyTempLocationPrecoordVS"/>
   <version value="0.01"/>
-  <name value="Skin Body Temperature Location Precoordinated value set"/>
+  <name value="SkinBodyTemperatureLocationPrecoordinatedvalueset"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Clinical Information Modeling Initiative (CIMI)"/>

@@ -3,7 +3,7 @@
   <id value="underlyingAnatomicalStructureVS"/>
   <url value="http://hl7.org/fhir/hspc/ValueSet/underlyingAnatomicalStructureVS"/>
   <version value="0.01"/>
-  <name value="Underlying Anatomical Structure value set"/>
+  <name value="UnderlyingAnatomicalStructurevalueset"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Clinical Information Modeling Initiative (CIMI)"/>

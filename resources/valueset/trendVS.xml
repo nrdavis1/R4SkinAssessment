@@ -6,7 +6,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/trendVS"/>
     <version value="0.01"/>
-    <name value="Trend value set"/>
+    <name value="Trendvalueset"/>
     <status value="draft"/>
 	<experimental value="true"/>
     <date value="2019-06-19"/>

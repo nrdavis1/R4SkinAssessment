@@ -4,7 +4,7 @@
 
   <url value="http://hl7.org/fhir/hspc/ValueSet/bodyLocationOrientationVS"/>
   <version value="0.01"/>
-  <name value="Body Location Orientation value set"/>
+  <name value="BodyLocationOrientationvalueset"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="Clinical Information Modeling Initiative (CIMI)"/>
