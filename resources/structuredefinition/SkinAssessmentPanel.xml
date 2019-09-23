@@ -99,8 +99,8 @@
                 <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
             </type>
         </element>
-		<element id="Observation:hspcSkinAssessmentPanel.related">
-			<path value="Observation.related"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember">
+			<path value="Observation.hasMember"/>
 			<sliceName value="RelatedObservations"/>
             <slicing id="10">
                 <discriminator>
@@ -113,120 +113,57 @@
             <min value="0"/>
             <max value="*"/>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinColorEval">
-			<path value="Observation.related"/>
-			<sliceName value="skinColorEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinColor.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinColorEval.target">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinColorEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Skin Color Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinColorEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinDegreeOfMoistureEval">
-			<path value="Observation.related"/>
-			<sliceName value="skinDegreeOfMoistureEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinDegreeOfMoistureEval.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinDegreeOfMoistureEval">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinDegreeOfMoistureEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Skin Degree of Moisture Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinTemperatureEval">
-			<path value="Observation.related"/>
-			<sliceName value="skinTemperatureEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinTemperatureEval.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinTemperatureEval">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTemperatureEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Skin Temperature Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinTurgorEval">
-			<path value="Observation.related"/>
-			<sliceName value="skinTurgorEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinTurgorEval.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinTurgorEval">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTurgorEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Skin Turgor Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinIntegrityEval">
-			<path value="Observation.related"/>
-			<sliceName value="skinIntegrityEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:skinIntegrityEval.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:skinIntegrityEval">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinIntegrityEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Skin Integrity Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:mucousMembraneIntegrityEval">
-			<path value="Observation.related"/>
-			<sliceName value="mucousMembraneIntegrityEval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:mucousMembraneIntegrityEval.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:mucousMembraneIntegrityEval">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:mucousMembraneIntegrityEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Mucous Membrane Itegrity Eval"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
 			</type>
 		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:pressurePointsExamined">
-			<path value="Observation.related"/>
-			<sliceName value="pressurePointsExamined"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related:pressurePointsExamined.type">
-			<path value="Observation.related.type"/>
-			<fixedCode value="has-member"/>
-		</element>
-		<element id="Observation:hspcSkinAssessmentPanel.related.target:pressurePointsExamined">
-			<path value="Observation.related.target"/>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:pressurePointsExamined">
+			<path value="Observation.hasMember"/>
+			<sliceName value="Pressure Points Examined"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>

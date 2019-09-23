@@ -21,14 +21,7 @@
 				<reference value ="Extension/AssociatedPreconditionExt"/>
 			</reference>
 			<description value ="Associated Precondition"/>			
-		</resource>	
-		<resource>		
-			<exampleBoolean value="false"/>	
-			<reference>	
-				<reference value ="Extension/DeviceExt"/>
-			</reference>
-			<description value ="Device"/>			
-		</resource>	
+		</resource>
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
@@ -121,7 +114,7 @@
 			</reference>
 			<description value ="Mucous Membrane Integrity Eval"/>			
 		</resource>		
-		<resource>		
+		<!-- <resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
 				<reference value ="StructureDefinition/organization"/>
@@ -134,7 +127,7 @@
 				<reference value ="StructureDefinition/practitioner"/>
 			</reference>
 			<description value ="HSPC Practitioner"/>			
-		</resource>		
+		</resource>	 -->	
 		<resource>		
 			<exampleBoolean value="false"/>	
 			<reference>	
@@ -346,13 +339,6 @@
 				<reference value="ValueSet/underlyingAnatomicalStructureVS"/>
 			</reference>
 			<description value="Underlying Anatomical Structure value set"/>
-		</resource>
-		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
-				<reference value="ValueSet/recurrenceVS"/>
-			</reference>
-			<description value="Recurrence value set"/>
 		</resource>
     </definition>
 </ImplementationGuide>
